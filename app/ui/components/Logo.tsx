@@ -1,3 +1,6 @@
+
+import { IoLogoLinkedin } from "react-icons/io5";
+
 export default function Logo() {
     return <>
         <a href="/" className="flex items-center space-x-2">
@@ -6,7 +9,7 @@ export default function Logo() {
                 alt="Logo"
                 className="w-8 h-8"
             /> */}
-            <span className="font-bold text-lg">Logo</span>
+            <IoLogoLinkedin className="h-8 w-8"/>
         </a>
     </>
 }

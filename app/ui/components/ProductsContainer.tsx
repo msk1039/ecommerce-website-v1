@@ -3,6 +3,13 @@ import ProductCard from "./ProductCard"
 
 export default function ProductContainer(){
 
+    // const fetchProducts = async () => {
+    //     return 
+    // }
+
+
+
+
     const products = [
         {
             title: "Product 1",
@@ -70,7 +77,7 @@ export default function ProductContainer(){
     
     return <>
 
-    <div className="flex gap-4 flex-wrap mx-auto">
+    <div className="flex gap-4 flex-wrap mx-auto content-center justify-center">
         {products.map((product, index) => {
 
             return <ProductCard key={index} product={product} />
