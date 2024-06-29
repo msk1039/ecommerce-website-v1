@@ -1,15 +1,16 @@
+import Image from "next/image";
+
 export default function CardSkeleton() {
   return (
-    <div
-      className={` relative overflow-hidden rounded-lg bg-gray-100 p-2 shadow-sm w-full h-[288px]`}
-    >
-      <div className="flex p-4">
-        <div className="h-5 w-5 rounded-md bg-gray-200" />
-        <div className="ml-2 h-6 w-16 rounded-md bg-gray-200 text-sm font-medium" />
-      </div>
-      <div className="flex items-center justify-center truncate rounded-xl bg-white px-4 py-8">
-        <div className="h-7 w-20 rounded-md bg-gray-200" />
-      </div>
-    </div>
+    <>
+      <Image
+        src={"/loading-image.jpg"}
+        alt={"loading"}
+        className="mx-auto h-full w-full "
+        loading="eager"
+        height={512}
+        width={512}
+      />
+    </>
   );
 }

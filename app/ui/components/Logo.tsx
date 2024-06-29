@@ -10,6 +10,7 @@ export default function Logo() {
                 className="w-8 h-8"
             /> */}
             <IoLogoLinkedin className="h-8 w-8"/>
+            <span className="text-xl font-bold block">My Store</span>
         </a>
     </>
 }
